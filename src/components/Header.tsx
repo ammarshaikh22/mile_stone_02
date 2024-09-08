@@ -6,11 +6,9 @@ import { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { menu } from "@/data/data";
-import { useRouter } from "next/navigation";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
-    const router  = useRouter()
     const [activeSection, setActiveSection] = useState<string | null>(null);
     const handleMenu = () => {
         setIsOpen(!isOpen);

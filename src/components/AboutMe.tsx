@@ -6,11 +6,11 @@ const AboutMe = () => {
     return (
         <section id="about"  className='relative my-28 h-auto'>
             <div className='max-w-[92%] mx-auto'>
-                <div className='flex gap-16 items-center justify-center'>
-                    <div className='md:w-[70%] md:block hidden'>
+                <div className='flex items-center justify-end gap-24'>
+                    <div className='md:block hidden absolute -top-36 left-20'>
                         <Image src={aboutImg} alt='img'/>
                     </div>
-                    <div className='md:w-[30%] md:w-full relative'>
+                    <div className='md:max-w-[50%] max-w-[95%] w-full relative'>
                         <h2 className='z-[-1] absolute top-0 left-0 right-0 md:text-8xl text-trans'>About</h2>
                         <h2 className='text-3xl md:text-5xl'>About Me</h2>
                         <p className='mt-6 md:mt-10 text-gray-400'>Hello! I am Front End Developer. I have one year of experience in Web Development.</p>

@@ -31,10 +31,10 @@ const Form = () => {
     }
     return (
         <div className='relative md:mt-28 mt-16 flex justify-end'>
-              <div className='absolute bg-bannerImg md:bg-contain bg-cover w-full h-full opacity-30 md:opacity-100 bg-left bg-no-repeat -top-16 md:left-14'></div>
+            <div className='absolute bg-bannerImg md:bg-contain bg-cover w-full h-full opacity-30 md:opacity-100 bg-left bg-no-repeat -top-16 md:left-14'></div>
             <div className='md:w-[60%] w-[95%]'>
                 <form className="my-8" >
-                    <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-8">
+                    <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-2 mb-8">
                         <LabelInputContainer>
                             <Label htmlFor="firstname">First name</Label>
                             <Input id="firstname" placeholder="Tyler" type="text" />

@@ -78,7 +78,7 @@ const Header = () => {
                     {!isOpen ? <MenuIcon /> : <CloseIcon />}
                 </span>
                 <div
-                    className={`p-12 fixed top-0 right-0 h-full w-[60%] bg-black bg-opacity-100 transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"
+                    className={`p-12 fixed top-0 right-0 h-full w-[80%] bg-black bg-opacity-100 transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"
                         }`}
                 >
                     <nav className="flex justify-center items-center h-full">

@@ -105,11 +105,6 @@ export const skills: Skills[] = [
     },
     {
         id: 6,
-        name: "REACT JS",
-        value: 50
-    },
-    {
-        id: 7,
         name: "NEXT JS",
         value: 50
     },

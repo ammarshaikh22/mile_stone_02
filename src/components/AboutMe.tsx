@@ -32,7 +32,7 @@ const AboutMe = () => {
                                 <li className='text-gray-400'>+923162324240</li>
                             </ul>
                         </div>
-                        <p className='mt-12 text-xl'><span className='text-yellow-500'>20 </span>Project Complete</p>
+                        <p className='mt-12 text-xl'><span className='text-yellow-500'>10 </span>Project Complete</p>
                         <DownloadButton />
                     </div>
                 </div>

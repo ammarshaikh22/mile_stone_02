@@ -30,11 +30,11 @@ const Form = () => {
         e.preventDefault()
     }
     return (
-        <div className='flex flex-col md:flex-row justify-center items-center mt-28'>
-            <div className='md:w-[50%] md:h-[640px]'>
-                <Image src='/banner.png' alt='img' width={450} height={450} />
+        <div className='flex flex-col md:flex-row justify-center items-center mt-28 gap-20'>
+            <div className='md:w-[35%] md:h-[640px]'>
+                <Image src='/banner.png' alt='img' width={300} height={300} className='w-auto h-full' />
             </div>
-            <div className='md:w-[50%] w-[95%]'>
+            <div className='md:w-[65%] w-[95%]'>
                 <form className="my-8" >
                     <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-8">
                         <LabelInputContainer>

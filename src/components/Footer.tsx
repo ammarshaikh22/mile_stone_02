@@ -4,33 +4,8 @@ import Link from "next/link";
 import { services } from "@/data/data"
 import { menu } from "@/data/data";
 const Footer = () => {
-    const scroll = (targetId: any) => {
-        const targetElement = document.getElementById(targetId);
-        if (!targetElement) return;
-
-        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-        const startPosition = window.pageYOffset;
-        const distance = targetPosition - startPosition;
-        const duration = 1000;
-        let start: number | null = null;
-
-        const animateScroll = (timestamp: number) => {
-            if (start === null) start = timestamp;
-            const progress = timestamp - start;
-            const currentPosition = startPosition + (distance * progress) / duration;
-            window.scrollTo(0, currentPosition);
-
-            if (progress < duration) {
-                requestAnimationFrame(animateScroll);
-            } else {
-                window.scrollTo(0, targetPosition);
-            }
-        };
-
-        requestAnimationFrame(animateScroll);
-    };
     return (
-        <footer className='relative py-14'>
+        <footer className='relative pt-20 pb-10'>
             <div className='max-w-[92%] mx-auto'>
                 <div className='flex flex-col md:flex-row justify-center gap-10 md:gap-14'>
                     <div className="md:w-[25%]">
@@ -45,7 +20,7 @@ const Footer = () => {
                                     menu.map((curr, index) => {
                                         return (
                                             <li key={index}>
-                                                <Link href={`#${curr.url}`} className="text-gray-400" onClick={() => scroll(curr.url)}>&rarr; {curr.name} </Link>
+                                                <Link href={`/${curr.url === 'home' ? '' : curr.url}`} className="text-gray-400" >&rarr; {curr.name} </Link>
                                             </li>
                                         )
                                     })
@@ -61,7 +36,7 @@ const Footer = () => {
                                     services.map((curr) => {
                                         return (
                                             <li key={curr.id}>
-                                                <Link href="#services" onClick={() => scroll("services")}  className="text-gray-400">&rarr; {curr.name}</Link>
+                                                <Link href="/services" className="text-gray-400">&rarr; {curr.name}</Link>
                                             </li>
                                         )
                                     })

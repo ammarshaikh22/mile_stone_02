@@ -8,7 +8,7 @@ import Form from './Form'
 const Contact = () => {
     return (
         <section id='contact' className='relative mt-24'>
-            <div className='max-w-[92%] mx-auto'>
+            <div className='max-w-[90%] mx-auto'>
                 <div className='text-center'>
                     <h2 className='z-[-1] absolute top-0 left-0 right-0 md:text-8xl text-trans'>Contact</h2>
                     <h2 className='text-3xl md:text-5xl'>Contact Me</h2>

@@ -39,7 +39,7 @@ const Header = () => {
         };
     }, [activeSection, setActiveSection]);
     return (
-        <header className="fixed w-full py-4 h-[80px] bg-zinc-900 z-50 mb-20 md:mb-0 shadow-xl">
+        <header className="fixed w-full py-4 bg-zinc-900 z-50 mb-20 md:mb-0 shadow-xl">
             {/* Desktop header */}
             <div className="max-w-[92%] mx-auto md:block hidden">
                 <div className="flex items-center justify-between">

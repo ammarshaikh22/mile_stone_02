@@ -2,7 +2,8 @@
 import Link from 'next/link'
 const Banner = () => {
     return (
-        <section id='home' className='pt-48 bg-bannerImg md:bg-contain bg-cover bg-no-repeat md:bg-left-20-bottom-90 md:bg-right-10-bottom-0 h-[100vh] md:h-[140vh] bg-center' >
+        <section id='home' className='pt-48 relative h-[100vh] md:h-[140vh]' >
+            <div className='absolute bg-bannerImg md:bg-contain bg-cover w-full h-full bg-right bg-no-repeat top-20 right-0'></div>
             <div className='max-w-[96%] md:max-w-[92%] mx-auto'>
                 <div className='flex justify-between'>
                     <div className='w-full md:text-start text-center mt-12 md:mt-0 slide-top' >

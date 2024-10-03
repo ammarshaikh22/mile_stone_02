@@ -115,22 +115,22 @@ export const Clients: Skills[] = [
     {
         id: 1,
         name: "Awards",
-        value: 50
+        value: 1000
     },
     {
         id: 2,
         name: "Complete Project",
-        value: 100
+        value: 10
     },
     {
         id: 3,
         name: "Happy Customers",
-        value: 100
+        value: 10
     },
     {
         id: 4,
         name: "Cups Of Coffee",
-        value: 100
+        value: 1000
     },
 ]
 

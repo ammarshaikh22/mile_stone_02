@@ -29,11 +29,10 @@ const items = [
         link: 'https://asmusicschool.netlify.app'
     },
     {
-        title: "The LinkedIn CLone",
-        header: <Skeleton url="/linkedin.png" width="400" />,
-        link: 'https://master--peaceful-dragon-88569d.netlify.app'
+        title: "The Portfolio Website",
+        header: <Skeleton url="/aswebdeveloper.png" width="400" />,
+        link: '/'
     },
-
     {
         title: "The Johne Demo Wensite",
         header: <Skeleton url="/js.png" width="400" />,
@@ -45,9 +44,9 @@ const items = [
         link: 'https://ammarshaikh22.github.io/Darma-work-new'
     },
     {
-        title: "The First Demo Portfolio Website",
-        header: <Skeleton url="/firstport.png" width="400" />,
-        link: 'https://master--peaceful-dragon-88569d.netlify.app'
+        title: "The Hackathon project",
+        header: <Skeleton url="/hackthon.png" width="400" />,
+        link: 'https://ascvbuilderhackathon.netlify.app'
     },
     {
         title: "The Quiz app",

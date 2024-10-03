@@ -37,12 +37,12 @@ const items = [
     {
         title: "The Johne Demo Wensite",
         header: <Skeleton url="/js.png" width="400" />,
-        link: 'https://master--peaceful-dragon-88569d.netlify.app'
+        link: 'https://personalassolution.netlify.app'
     },
     {
         title: "The Darna Website",
         header: <Skeleton url="/darna.png" width="700" />,
-        link: 'https://master--peaceful-dragon-88569d.netlify.app'
+        link: 'https://ammarshaikh22.github.io/Darma-work-new'
     },
     {
         title: "The First Demo Portfolio Website",

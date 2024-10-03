@@ -27,7 +27,7 @@ const AboutMe = () => {
                                 <li className='text-gray-400'>Muhammad Ammar Shaikh</li>
                                 <li className='text-gray-400'>October 22,2006</li>
                                 <li className='text-gray-400'>Flat A-10 Pyramid Plaza, Yaseenabad, Karachi Sindh, Pakistan</li>
-                                <li className='text-gray-400'>74000</li>
+                                <li className='text-gray-400'>75950</li>
                                 <li className='text-gray-400'>ammarshaikh50099@gmail.com</li>
                                 <li className='text-gray-400'>+923162324240</li>
                             </ul>

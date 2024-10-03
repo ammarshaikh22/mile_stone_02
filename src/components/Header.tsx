@@ -103,6 +103,10 @@ const Header = () => {
                                     </Link>
                                 </li>
                             ))}
+                            <div className="flex items-center gap-6">
+                                <Link href='https://www.linkedin.com/in/muhammad-ammar-shaikh-27788228b' target="_blank"><LinkedInIcon /></Link>
+                                <Link href='https://github.com/ammarshaikh22' target="_blank"><GitHubIcon /></Link>
+                            </div>
                         </ul>
                     </nav>
                 </div>

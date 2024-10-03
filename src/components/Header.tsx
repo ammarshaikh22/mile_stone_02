@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { menu } from "@/data/data";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -65,6 +67,10 @@ const Header = () => {
                             ))}
                         </ul>
                     </nav>
+                    <div className="flex items-center gap-6">
+                        <Link href='https://www.linkedin.com/in/muhammad-ammar-shaikh-27788228b' target="_blank"><LinkedInIcon /></Link>
+                        <Link href='https://github.com/ammarshaikh22' target="_blank"><GitHubIcon /></Link>
+                    </div>
                 </div>
             </div>
             {/* Mobile or tablet header */}

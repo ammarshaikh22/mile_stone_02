@@ -26,7 +26,7 @@ const items = [
     {
         title: "The Music Website",
         header: <Skeleton url="/music.png" width="400" />,
-        link: 'https://master--peaceful-dragon-88569d.netlify.app'
+        link: 'https://asmusicschool.netlify.app'
     },
     {
         title: "The LinkedIn CLone",
@@ -52,7 +52,7 @@ const items = [
     {
         title: "The Quiz app",
         header: <Skeleton url="/quiz.png" width="400" />,
-        link: 'https://master--peaceful-dragon-88569d.netlify.app'
+        link: 'https://asquizapp.netlify.app'
     },
     {
         title: "The Ecommerce Website",

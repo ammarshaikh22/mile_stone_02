@@ -162,7 +162,7 @@ export const contact: Contact[] = [
         img: "/web.png",
         name: "WEBSITE",
         detail: "Portfolio Website",
-        link: "https://master--as-portfolio-web.netlify.app/"
+        link: "https://aswebsolution.netlify.app"
     },
 ]
 

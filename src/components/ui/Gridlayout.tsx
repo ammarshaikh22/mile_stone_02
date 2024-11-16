@@ -46,7 +46,7 @@ const items = [
     {
         title: "The Hackathon project",
         header: <Skeleton url="/hackthon.png" width="400" />,
-        link: 'https://ascvbuilderhackathon.netlify.app'
+        link: 'https://ascvmaker.netlify.app/'
     },
     {
         title: "The Quiz app",

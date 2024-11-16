@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client"
 import React from 'react'
 import { contact } from "@/data/data"
@@ -12,7 +11,7 @@ const Contact = () => {
                 <div className='text-center'>
                     <h2 className='z-[-1] absolute top-0 left-0 right-0 md:text-8xl text-trans'>Contact</h2>
                     <h2 className='text-3xl md:text-5xl'>Contact Me</h2>
-                    <p className='max-w-[95%] md:max-w-[76%] mx-auto mt-6 md:mt-14 text-gray-400 text-sm md:text-base'>Interested in working together? Reach out to discuss your project, get a quote, or just to say hi. Let's create something amazing</p>
+                    <p className='max-w-[95%] md:max-w-[76%] mx-auto mt-6 md:mt-14 text-gray-400 text-sm md:text-base'>Interested in working together? Reach out to discuss your project, get a quote, or just to say hi. Let create something amazing</p>
                 </div>
                 <div className='flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24 mt-24'>
                     {

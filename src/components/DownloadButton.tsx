@@ -1,10 +1,10 @@
 "use client"
 const DownloadButton = ({className}:any) => {
     const handleDownload = () => {
-        const fileUrl = "/cv.pdf"; // Path relative to the public folder
+        const fileUrl = "/cv.pdf"; 
         const link = document.createElement('a');
         link.href = fileUrl;
-        link.download = "cv.pdf"; // This will be the default filename
+        link.download = "cv.pdf"; 
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

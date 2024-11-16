@@ -3,7 +3,7 @@ import { Gridlayout } from './ui/Gridlayout'
 
 const Project = () => {
     return (
-        <section id='project'  className='relative mt-24 pb-44'>
+        <section id='project'  className='relative mt-24 pb-44 w-full'>
             <div className='max-w-[92%] mx-auto'>
                 <div className='text-center'>
                     <h2 className='z-[-1] absolute top-0 left-0 right-0 md:text-8xl text-trans'>Project</h2>

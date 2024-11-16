@@ -1,5 +1,4 @@
 "use client"
-/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import { services } from "@/data/data"
 import { menu } from "@/data/data";
@@ -10,7 +9,7 @@ const Footer = () => {
                 <div className='flex flex-col md:flex-row justify-center gap-10 md:gap-14'>
                     <div className="md:w-[25%]">
                         <h4 className="text-2xl">About</h4>
-                        <p className="mt-12 text-gray-400 text-base">Hi, I'm an experienced front-end developer with a passion for creating high-quality, responsive web applications using Next.js and React. I love turning ideas into reality and delivering exceptional user experiences.</p>
+                        <p className="mt-12 text-gray-400 text-base">Hi, I am an experienced front-end developer with a passion for creating high-quality, responsive web applications using Next.js and React. I love turning ideas into reality and delivering exceptional user experiences.</p>
                     </div>
                     <div className="md:w-[25%]">
                         <h4 className="text-2xl md:ml-6">Links</h4>

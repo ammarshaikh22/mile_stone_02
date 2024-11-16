@@ -11,37 +11,11 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
-    const [activeSection, setActiveSection] = useState<string | null>(null);
     const handleMenu = () => {
         setIsOpen(!isOpen);
     };
-    useEffect(() => {
-        const sections = document.querySelectorAll("section");
-        const options = {
-            root: null,
-            threshold: 0.3,
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setActiveSection(entry.target.id);
-                }
-            });
-        }, options);
-
-        sections.forEach((section) => {
-            observer.observe(section);
-        });
-
-        return () => {
-            sections.forEach((section) => {
-                observer.unobserve(section);
-            });
-        };
-    }, [activeSection, setActiveSection]);
     return (
-        <header className="fixed w-full py-4 bg-black z-50 mb-20 md:mb-0 shadow-xl">
+        <header className="sticky top-0 py-4 bg-black z-50 mb-20 md:mb-0 shadow-xl">
             {/* Desktop header */}
             <div className="max-w-[92%] mx-auto md:block hidden">
                 <div className="flex items-center justify-between">
@@ -56,10 +30,7 @@ const Header = () => {
                                 <li key={curr.id} className="relative">
                                     <Link
                                         href={curr.url === "home" ? "/" : `/${curr.url}`}
-                                        className={`text-base ${activeSection === curr.url
-                                            ? "text-yellow-500"
-                                            : "text-white"
-                                            } hover:text-yellow-500 hover:after:content-[''] hover:after:top-7 hover:after:left-0 hover:after:right-2 hover:after:bottom-0 hover:after:mx-auto hover:after:w-[100%] hover:after:h-1 hover:after:bg-yellow-500 hover:after:absolute`}
+                                        className={`text-base hover:text-yellow-500 hover:after:content-[''] hover:after:top-7 hover:after:left-0 hover:after:right-2 hover:after:bottom-0 hover:after:mx-auto hover:after:w-[100%] hover:after:h-1 hover:after:bg-yellow-500 hover:after:absolute`}
                                     >
                                         {curr.name}
                                     </Link>
@@ -94,10 +65,7 @@ const Header = () => {
                                     <Link
                                         href={curr.url === "home" ? "/" : `/${curr.url}`}
                                         onClick={(e) => setIsOpen(!isOpen)}
-                                        className={`text-base ${activeSection === curr.url
-                                            ? "text-yellow-500"
-                                            : "text-white"
-                                            } hover:text-yellow-500 hover:after:content-[''] hover:after:top-7 hover:after:left-0 hover:after:right-2 hover:after:bottom-0 hover:after:mx-auto hover:after:w-[100%] hover:after:h-1 hover:after:bg-yellow-500 hover:after:absolute`}
+                                        className={`text-base hover:text-yellow-500 hover:after:content-[''] hover:after:top-7 hover:after:left-0 hover:after:right-2 hover:after:bottom-0 hover:after:mx-auto hover:after:w-[100%] hover:after:h-1 hover:after:bg-yellow-500 hover:after:absolute`}
                                     >
                                         {curr.name}
                                     </Link>

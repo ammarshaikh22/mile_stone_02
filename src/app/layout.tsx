@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Poppins } from "next/font/google";
+import { Exo} from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-const poppins = Poppins({
+const exo = Exo({
   weight: '500',
   subsets: ['latin'],
   display: 'swap'
@@ -23,7 +23,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={poppins.className}>
+      <body className={`max-w-[1260px] mx-auto relative ${exo.className}`}>
         <Header />
         {children}
         <Footer />

@@ -2,7 +2,7 @@ import { services } from "@/data/data"
 import Image from 'next/image';
 const Services = () => {
     return (
-        <section id="services" className='relative my-16'>
+        <section id="services" className='relative my-16 w-full'>
             <div className='max-w-[92%] mx-auto'>
                 <div className='text-center'>
                     <h2 className='z-[-1] absolute top-0 left-0 right-0 md:text-8xl text-trans'>Services</h2>

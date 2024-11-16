@@ -8,7 +8,7 @@ import Freelancing from "@/components/Freelancing"
 import Contact from "@/components/Contact";
 export default function Home() {
   return (
-    <main>
+    <main >
       <Banner />
       <AboutMe />
       <Resume />

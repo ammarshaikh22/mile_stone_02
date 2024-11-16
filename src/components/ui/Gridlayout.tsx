@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function Gridlayout() {
     return (
-        <BentoGrid className="max-w-[1000px] mx-auto">
+        <BentoGrid className="">
             {items.map((item, i) => (
                 <BentoGridItem
                     key={i}
@@ -19,7 +19,7 @@ export function Gridlayout() {
 }
 const Skeleton = ({ url, width }: any) => (
     <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
-        <Image src={url} alt="img" width={width} height={100} />
+        <Image src={url} alt="img" width={width} height={100} className="w-full" />
     </div>
 );
 const items = [
